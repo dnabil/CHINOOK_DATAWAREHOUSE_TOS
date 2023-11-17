@@ -1,4 +1,4 @@
-CREATE TABLE public.fact_sales (
+CREATE TABLE fact_sales (
 	invoice_line_id int4 NOT NULL PRIMARY KEY,
 	invoice_id int4 NOT NULL REFERENCES dim_invoice (id),
 	track_id int4 NOT NULL REFERENCES dim_track (id),

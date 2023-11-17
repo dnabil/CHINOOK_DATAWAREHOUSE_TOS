@@ -1,6 +1,6 @@
 CREATE TABLE dim_date (
 	id serial4 NOT NULL,
-	"date" timestamp(6) NOT NULL,
+	"date" date NOT NULL,
 	"year" int4 NOT NULL,
 	"month" int4 NOT NULL,
 	"day" int4 NOT NULL,

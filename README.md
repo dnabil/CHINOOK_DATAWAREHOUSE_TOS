@@ -13,7 +13,8 @@ This project was created to fulfill the requirements for the Data Warehouse cour
 1. Install chinook database
 2. install [go-migrate](https://github.com/golang-migrate/migrate) using scoop (windows)/etc
 3. Clone this project to your TOS workspace
-4. `migrate -path migrations -database "conn string" -verbose up` to create dwh schema
+4. Update the metadata for the Chinook and datawarehouse databases to match your PostgreSQL credentials (in TOS).
+5. `migrate -path migrations/datawarehouse -database "conn string" -verbose up` to create datawarehouse db tables
 
    conn string format: postgresql://username:password@localhost:5432/dbname?sslmode=disable
 
