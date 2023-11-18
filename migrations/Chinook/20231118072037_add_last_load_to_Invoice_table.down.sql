@@ -1,0 +1,2 @@
+ALTER TABLE "Invoice" 
+DROP COLUMN IF EXISTS last_load;

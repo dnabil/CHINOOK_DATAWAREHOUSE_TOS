@@ -1,0 +1,2 @@
+ALTER TABLE "Track" 
+DROP COLUMN IF EXISTS last_load;

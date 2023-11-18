@@ -1,0 +1,2 @@
+ALTER TABLE "Customer" 
+DROP COLUMN IF EXISTS updated_at;

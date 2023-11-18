@@ -1,0 +1,2 @@
+ALTER TABLE "InvoiceLine"
+DROP COLUMN IF EXISTS last_load;
