@@ -3,10 +3,10 @@ CREATE OR REPLACE FUNCTION customer_before_update_function()
    LANGUAGE PLPGSQL
 AS $$
 BEGIN
-	IF NEW.updated_at is null THEN
-		NEW.updated_at := Now();
-	END IF;
-	RETURN NEW;
+    IF NEW.updated_at IS NULL OR NEW.updated_at = OLD.updated_at THEN
+        NEW.updated_at := NOW();
+    END IF;
+    RETURN NEW;
 END;
 $$;
 
